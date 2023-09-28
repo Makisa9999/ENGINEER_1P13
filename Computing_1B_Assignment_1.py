@@ -1,12 +1,13 @@
 import random, math
 
-#Variables
+# Variables
+g = 9.81
 theta = random.random() * 45
 theta_rads = math.radians(theta)
 d = float(input("Please enter the distance to our target zombie: "))
 v = math.sqrt((g*d)/(math.sin(2*theta_rads)))
-g = 9.81
 
+# Output
 print("---------------------------------------------------")
 print("Ready for launch!")
 print("Set angle to ", theta, "degrees.")
@@ -27,4 +28,12 @@ scenarios and why?
         would try to convert a non float input into a float
 2. Would the behaviour of your program change if the line 
 g = 9.81 was defined after you calculated the value for V? 
+Justify your answer. (Hint: You may need to go to Kernel > 
+Restart & Clear Output before trying this.)
+    Yes, the program would not work at all. This is because
+    when the program is trying to figure out the value for
+    V it needs a variable called g in order to get that 
+    value. However since the variable is defined after its 
+    use and the compiler runs code one line at a time, it 
+    would not know the value that it should use for g. 
 """
