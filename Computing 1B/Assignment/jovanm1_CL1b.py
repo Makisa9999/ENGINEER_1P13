@@ -12,6 +12,7 @@ print("---------------------------------------------------")
 print("Ready for launch!")
 print("Set angle to ", theta, "degrees.")
 print("Set speed to ", v, "m/s.")
+print("---------------------------------------------------")
 
 """
 1. The program requires that the distance entered by the 
