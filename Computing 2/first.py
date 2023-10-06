@@ -18,4 +18,3 @@ def averageGrade1(grade1, grade2, grade3, grade4, grade5):
     return average
 
 print(averageGrade1(95,96,97,98,99))
-
